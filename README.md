@@ -7,7 +7,7 @@ Builds the tight-binding Hamiltonian with nearest-neighbor hopping and a separab
 ## Features
 - Real-symmetric Hamiltonian $\(H \in \mathbb{R}^{(L_xL_y) \times (L_xL_y)}\)$
 - Onsite potential depends on **both** coordinates:
- $ \[
+ $\[
   V(x,y)=\lambda_x\sin(2\pi\alpha_x x+\phi_x)+\lambda_y\sin(2\pi\alpha_y y+\phi_y)
   \]$
 - Open boundaries (simple to read/extend)
