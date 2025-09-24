@@ -5,7 +5,7 @@ Minimal, **safe-to-share** implementation of the 2D Hermitian Aubry–André–H
 Builds the tight-binding Hamiltonian with nearest-neighbor hopping and a separable onsite modulation in **x** and **y**, then plots the spectrum \(E\) vs the phase \(\phi_x\).
 
 ## Features
-- Real-symmetric Hamiltonian \(H \in \mathbb{R}^{(L_xL_y) \times (L_xL_y)}\)
+- Real-symmetric Hamiltonian $\(H \in \mathbb{R}^{(L_xL_y) \times (L_xL_y)}\)$
 - Onsite potential depends on **both** coordinates:
   \[
   V(x,y)=\lambda_x\sin(2\pi\alpha_x x+\phi_x)+\lambda_y\sin(2\pi\alpha_y y+\phi_y)
