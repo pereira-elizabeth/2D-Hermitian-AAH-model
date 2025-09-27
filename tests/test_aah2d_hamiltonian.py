@@ -1,8 +1,6 @@
 import numpy as np
 from numpy.linalg import eigh
-
-# 👇 CHANGE THIS import to match your module/function if needed
-from src.hamiltonian import build_hamiltonian  # expects H = build_hamiltonian(...)
+from src.hamiltonian import aah_2d_hamiltonian  
 
 def test_hamiltonian_is_real_symmetric_small_grid():
     # Small grid keeps the test fast
@@ -14,7 +12,7 @@ def test_hamiltonian_is_real_symmetric_small_grid():
     lambdax, alphax, phix = 0.7, (np.sqrt(5)-1)/2, 0.3
     lambday, alphay, phiy = 0.5, (np.sqrt(5)-1)/2, 0.1
 
-    H = build_hamiltonian(
+    H = aah_2d_hamiltonian(
         Lx=Lx, Ly=Ly,
         tx=tx, ty=ty,
         lambdax=lambdax, alphax=alphax, phix=phix,
@@ -34,7 +32,7 @@ def test_eigen_reconstruction_matches():
     lambdax, alphax, phix = 0.4, 0.377, 0.0
     lambday, alphay, phiy = 0.6, 0.289, 0.2
 
-    H = build_hamiltonian(
+    H = aah_2d_hamiltonian(
         Lx=Lx, Ly=Ly,
         tx=tx, ty=ty,
         lambdax=lambdax, alphax=alphax, phix=phix,
@@ -56,7 +54,7 @@ def test_phi_x_sweep_shapes():
     phix_vals = np.linspace(0.0, 2*np.pi, 3, endpoint=False)
     spectra = []
     for phix in phix_vals:
-        H = build_hamiltonian(
+        H = aah_2d_hamiltonian(
             Lx=Lx, Ly=Ly,
             tx=tx, ty=ty,
             lambdax=lambdax, alphax=alphax, phix=phix,
