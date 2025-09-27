@@ -33,6 +33,12 @@ Running the demo script will generate a plot of the energy bands vs $\phi_x$, e.
 ![Energy spectra plot](figures/spectrum.png)
 
 ---
+## Tests
+Run the test suite:
+
+```bash
+pytest -q
+```
 
 ## How to run
 
@@ -42,5 +48,9 @@ Clone the repo and install dependencies:
 git clone https://github.com/<your-username>/2D-Hermitian-AAH-model.git
 cd 2D-Hermitian-AAH-model
 pip install -r requirements.txt
+```
+
+
+
 
 
