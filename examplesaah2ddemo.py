@@ -3,7 +3,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+from src.hamiltonian import aah_2d_hamiltonian
 def main():
     os.makedirs("figures", exist_ok=True)
 
