@@ -1,5 +1,13 @@
 # 2D Hermitian Aubry–André–Harper (AAH) Model
 
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Last Commit](https://img.shields.io/github/last-commit/pereira-elizabeth/aah-2d-hermitian)
+![Code Size](https://img.shields.io/github/languages/code-size/pereira-elizabeth/aah-2d-hermitian)
+<!-- CI badge (works after you add .github/workflows/tests.yml) -->
+<!-- ![Build](https://github.com/pereira-elizabeth/aah-2d-hermitian/actions/workflows/tests.yml/badge.svg) -->
+
+
 This repository contains a **minimal, safe-to-share implementation** of the **2D Hermitian Aubry–André–Harper model**.  
 It builds the tight-binding Hamiltonian on an $L_x \times L_y$ lattice, diagonalizes it, and plots the energy spectrum $E$ as a function of the modulation phase $\phi_x$.
 
