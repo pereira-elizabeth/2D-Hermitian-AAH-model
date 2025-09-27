@@ -1,8 +1,7 @@
 import numpy as np
 from numpy.linalg import eigh
 import sys, pathlib
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-import src
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))  # add repo root to sys.path
 from src.hamiltonian import aah_2d_hamiltonian  
 
 def test_hamiltonian_is_real_symmetric_small_grid():
