@@ -10,18 +10,21 @@ def test_hamiltonian_is_real_symmetric_small_grid():
     N = Lx * Ly
 
     # example parameters (anything reasonable is fine)
-    tx, ty = 1.0, 1.0
+    t = 1.0
     lambdax, alphax, phix = 0.7, (np.sqrt(5)-1)/2, 0.3
     lambday, alphay, phiy = 0.5, (np.sqrt(5)-1)/2, 0.1
 
     H = aah_2d_hamiltonian(
         Lx=Lx, Ly=Ly,
-        tx=tx, ty=ty,
-        lambdax=lambdax, alphax=alphax, phix=phix,
-        lambday=lambday, alphay=alphay, phiy=phiy,
+        t=t,
+        lambdax=lambdax, 
+        lambday=lambday,
+        alphax=alphax,
+        alphay=alphay,
+        phix=phix,
+        phiy=phiy,
         bc="open", dtype=float
     )
-
     assert H.shape == (N, N)
     assert np.isrealobj(H)
     # Hermitian check (for real matrices, symmetric)
@@ -30,15 +33,19 @@ def test_hamiltonian_is_real_symmetric_small_grid():
 def test_eigen_reconstruction_matches():
     Lx, Ly = 3, 3
     N = Lx * Ly
-    tx, ty = 1.0, 0.8
+    t = 1.0
     lambdax, alphax, phix = 0.4, 0.377, 0.0
     lambday, alphay, phiy = 0.6, 0.289, 0.2
 
     H = aah_2d_hamiltonian(
         Lx=Lx, Ly=Ly,
-        tx=tx, ty=ty,
-        lambdax=lambdax, alphax=alphax, phix=phix,
-        lambday=lambday, alphay=alphay, phiy=phiy,
+        t=t,
+        lambdax=lambdax, 
+        lambday=lambday,
+        alphax=alphax,
+        alphay=alphay,
+        phix=phix,
+        phiy=phiy,
         bc="open", dtype=float
     )
 
