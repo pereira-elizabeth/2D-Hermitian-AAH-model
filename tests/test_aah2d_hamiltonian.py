@@ -56,20 +56,23 @@ def test_eigen_reconstruction_matches():
 def test_phi_x_sweep_shapes():
     Lx, Ly = 3, 2
     N = Lx * Ly
-    tx = ty = 1.0
+    t = 1.0
     lambdax, alphax = 0.5, 0.377
     lambday, alphay, phiy = 0.0, 0.0, 0.0   # simple y-channel
 
     phix_vals = np.linspace(0.0, 2*np.pi, 3, endpoint=False)
     spectra = []
     for phix in phix_vals:
-        H = aah_2d_hamiltonian(
-            Lx=Lx, Ly=Ly,
-            tx=tx, ty=ty,
-            lambdax=lambdax, alphax=alphax, phix=phix,
-            lambday=lambday, alphay=alphay, phiy=phiy,
-            bc="open", dtype=float
-        )
+       H = aah_2d_hamiltonian(
+        Lx, Ly,
+        t,
+        lambdax, 
+        lambday,
+        alphax,
+        alphay,
+        phix,
+        phiy
+         )
         w = eigh(H, UPLO='U')[0]
         spectra.append(w)
 
