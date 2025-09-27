@@ -26,7 +26,7 @@ It builds the tight-binding Hamiltonian on an $L_x \times L_y$ lattice, diagonal
 ## Example Output
 
 Running the demo script will generate a plot of the energy bands vs $\phi_x$, e.g.:
-
+![Energy spectra plot](figures/spectrum.png)
 
 ---
 
