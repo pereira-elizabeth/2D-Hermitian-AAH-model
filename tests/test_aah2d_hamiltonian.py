@@ -1,5 +1,7 @@
 import numpy as np
 from numpy.linalg import eigh
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 import src
 from src.hamiltonian import aah_2d_hamiltonian  
 
