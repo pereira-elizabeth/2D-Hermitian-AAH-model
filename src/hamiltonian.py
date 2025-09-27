@@ -1,3 +1,7 @@
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+
 def idx(x: int, y: int, Lx: int, Ly: int) -> int:
     """Map 2D coords (x,y) to 1D index i in row-major order."""
     return x * Ly + y
