@@ -1,5 +1,6 @@
 import numpy as np
 from numpy.linalg import eigh
+import src
 from src.hamiltonian import aah_2d_hamiltonian  
 
 def test_hamiltonian_is_real_symmetric_small_grid():
