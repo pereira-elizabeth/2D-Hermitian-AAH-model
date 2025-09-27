@@ -10,9 +10,7 @@ It builds the tight-binding Hamiltonian on an $L_x \times L_y$ lattice, diagonal
 - A real-symmetric Hamiltonian  
   $H \in \mathbb{R}^{(L_x L_y) \times (L_x L_y)}$  
 
-- Onsite potential that depends on both lattice directions:  
-<img src="https://latex.codecogs.com/svg.latex?V(x,y)=\lambda_{x}\sin(2\pi\alpha_{x}x+\phi_{x})+\lambda_{y}\sin(2\pi\alpha_{y}y+\phi_{y})" alt="V(x,y) equation">
-
+- Onsite AAH potential that depends on both lattice directions $x$ and $y$.
 
 - Nearest-neighbor hopping on a 2D square grid  
 - Open boundary conditions (easy to modify if you want periodic)  
