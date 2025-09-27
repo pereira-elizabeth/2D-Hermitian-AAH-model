@@ -63,16 +63,16 @@ def test_phi_x_sweep_shapes():
     phix_vals = np.linspace(0.0, 2*np.pi, 3, endpoint=False)
     spectra = []
     for phix in phix_vals:
-       H = aah_2d_hamiltonian(
-        Lx, Ly,
-        t,
-        lambdax, 
-        lambday,
-        alphax,
-        alphay,
-        phix,
-        phiy
-         )
+        H = aah_2d_hamiltonian(
+          Lx, Ly,
+          t,
+          lambdax, 
+          lambday,
+          alphax,
+          alphay,
+          phix,
+          phiy
+          )
         w = eigh(H, UPLO='U')[0]
         spectra.append(w)
 
