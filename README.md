@@ -6,7 +6,7 @@
 ![Code Size](https://img.shields.io/github/languages/code-size/pereira-elizabeth/aah-2d-hermitian)
 <!-- CI badge (works after you add .github/workflows/tests.yml) -->
 <!-- ![Build](https://github.com/pereira-elizabeth/aah-2d-hermitian/actions/workflows/tests.yml/badge.svg) -->
-This project shows how a neural network can learn the “fingerprint” of a material and predict how it behaves when we change its properties.
+A simple simulation of how electrons or light behave in a 2D crystal with a patterned potential.
 
 This repository contains a **minimal, safe-to-share implementation** of the **2D Hermitian Aubry–André–Harper model**.  
 It builds the tight-binding Hamiltonian on an $L_x \times L_y$ lattice, diagonalizes it, and plots the energy spectrum $E$ as a function of the modulation phase $\phi_x$.
